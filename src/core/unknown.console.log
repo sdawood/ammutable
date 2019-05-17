@@ -1,0 +1,72 @@
+/Users/sdawood/.nvm/versions/node/v8.3.0/bin/node /Users/sdawood/workspace/rp/src/core/unknown.js
+DEBUG:: ---------- +JournalEntry 1 {} NO .gets
+DEBUG:: ---------- JOURNAL-VALUE: {}
+DEBUG:: ---------- > {}
+DEBUG:: ---------- > undefined
+DEBUG:: ---------- undefined
+DEBUG:: ---------- undefined
+DEBUG:: ---------- >* {}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining"}
+DEBUG:: ---------- > RP
+DEBUG:: ---------- +JournalEntry 2 {"hello":"RP","___marker":"@_x_>w>_New Begining"} RP
+DEBUG:: ---------- {"returns":{"hello":"RP","___marker":"@_x_>w>_New Begining"}}
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"RP","___marker":"@_x_>w>_New Begining"}
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining"}
+DEBUG:: ---------- > RP
+DEBUG:: ---------- RP
+DEBUG:: ---------- RP
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"RP","___marker":"@_x_>w>_New Begining"}
+DEBUG:: ---------- ----------
+DEBUG:: ---------- ----------
+DEBUG:: ---------- >* {"hello":"RP","___marker":"@_x_>w>_New Begining"}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code"}
+DEBUG:: ---------- > RP
+DEBUG:: ---------- +JournalEntry 3 {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code"} RP
+DEBUG:: ---------- {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code"}
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code"}
+DEBUG:: ---------- >* {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code"}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > RP
+DEBUG:: ---------- +JournalEntry 4 {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}} RP
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > RP
+DEBUG:: ---------- RP
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > Bad Code
+DEBUG:: ---------- Bad Code
+DEBUG:: ---------- > {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > {"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}
+DEBUG:: ---------- {"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- >* {"hello":"RP","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > New World
+DEBUG:: ---------- +JournalEntry 5 {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}} New World
+DEBUG:: ---------- {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- >* {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Bad Code","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > New World
+DEBUG:: ---------- +JournalEntry 6 {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}} New World
+DEBUG:: ---------- {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- >* {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:11:29.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- object
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > New World
+DEBUG:: ---------- +JournalEntry 7 {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}} New World
+DEBUG:: ---------- {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > New World
+DEBUG:: ---------- New World
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > Old World
+DEBUG:: ---------- Old World
+DEBUG:: ---------- > {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
+DEBUG:: ---------- > {"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}
+DEBUG:: ---------- {"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}
+DEBUG:: ---------- JOURNAL-VALUE: {"hello":"New World","___marker":"@_x_>w>_New Begining","bye":"Old World","journaledPost":{"timestamp":"2019-05-17T18:14:50.344Z","author":"Shady Dawood"}}
