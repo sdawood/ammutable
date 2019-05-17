@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "functional-pipelines": "^1.2.1",
+    "json-atom": "^1.2.1",
     "jsonpath": "^1.0.1",
+    "rxjs": "^6.5.2",
     "shades": "^2.0.0"
   },
   "devDependencies": {
