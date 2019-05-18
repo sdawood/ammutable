@@ -1,7 +1,7 @@
 const F = require('functional-pipelines');
 
 const {get, set, apply} = require('json-atom');
-const {Writer} = require('../unknown');
+const {Writer} = require('./unknown');
 
 const {show, aLine} = require('../../utils/trace');
 

@@ -4,7 +4,7 @@ const {take, toArray, distinctUntilChanged, distinctUntilKeyChanged} = require('
 const {get, set, apply} = require('json-atom');
 
 const {Writer} = require('./unknown');
-const {show, aLine} = require('../utils/trace');
+const {show, aLine} = require('../../utils/trace');
 
 describe('Journal Writer', () => {
     const journal = new BehaviorSubject({value: {}});

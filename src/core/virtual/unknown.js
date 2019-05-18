@@ -1,6 +1,6 @@
 const {BehaviorSubject, ReplaySubject, Subject} = require('rxjs');
 const {get, set, apply} = require('json-atom');
-const {show, aLine} = require('../utils/trace');
+const {show, aLine} = require('../../utils/trace');
 
 const incrementer = previous => (by = 0) => previous === undefined ? 0 : by ? previous + by : previous;
 
