@@ -1,0 +1,666 @@
+[
+  {
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": {
+            "start": {
+              "place": "EP11-Place",
+              "time": "EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP12": {
+            "start": {
+              "place": "EP12-Place",
+              "time": "EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP13": {
+            "start": {
+              "place": "EP13-Place",
+              "time": "EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "sequence": [
+            "EP11",
+            "EP12",
+            "EP13"
+          ]
+        },
+        "EP2": {
+          "EP21": {
+            "start": {
+              "place": "EP21-Place",
+              "time": "EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP22": {
+            "start": {
+              "place": "EP22-Place",
+              "time": "EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP23": {
+            "start": {
+              "place": "EP23-Place",
+              "time": "EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "sequence": [
+            "EP21",
+            "EP22",
+            "EP23"
+          ]
+        },
+        "EP3": {
+          "EP31": {
+            "start": {
+              "place": "EP31-Place",
+              "time": "EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP32": {
+            "start": {
+              "place": "EP32-Place",
+              "time": "EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP33": {
+            "start": {
+              "place": "EP33-Place",
+              "time": "EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "sequence": [
+            "EP31",
+            "EP32",
+            "EP33"
+          ]
+        }
+      },
+      "sequence": [
+        "EP1",
+        "EP2",
+        "EP3"
+      ]
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 2
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.sequence[1]",
+    "sets": {},
+    "value": {
+      "episodes": "[Circular reference found] Truncated by IDE",
+      "sequence": [
+        "EP1",
+        "NOT-AVAILABLE",
+        "EP3"
+      ]
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 3
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP33.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": {
+            "start": {
+              "place": "EP33-Place",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 4
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP33.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 5
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP32.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": {
+            "start": {
+              "place": "EP32-Place",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 6
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP32.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 7
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP31.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": {
+            "start": {
+              "place": "EP31-Place",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 8
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP31.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 9
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.sequence[1]",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": "[Circular reference found] Truncated by IDE",
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": [
+            "EP11",
+            "NOT-AVAILABLE",
+            "EP13"
+          ]
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 10
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.EP11.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": {
+            "start": {
+              "place": "EP11-Place",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 11
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.EP11.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "NOT-AVAILABLE"
+            }
+          },
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 12
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.sequence[1]",
+    "sets": {},
+    "value": {
+      "episodes": "[Circular reference found] Truncated by IDE",
+      "sequence": [
+        "EP1",
+        "EP2",
+        "EP3"
+      ]
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 13
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP33.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 14
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP33.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": {
+            "start": {
+              "place": "EP33-Place",
+              "time": "EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 15
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP32.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 16
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP32.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": "[Circular reference found] Truncated by IDE",
+          "EP32": {
+            "start": {
+              "place": "EP32-Place",
+              "time": "EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 17
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP31.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 18
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP3.EP31.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": "[Circular reference found] Truncated by IDE",
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": {
+          "EP31": {
+            "start": {
+              "place": "EP31-Place",
+              "time": "EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP32": "[Circular reference found] Truncated by IDE",
+          "EP33": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        }
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 19
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.sequence[1]",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": "[Circular reference found] Truncated by IDE",
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": [
+            "EP11",
+            "EP12",
+            "EP13"
+          ]
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 20
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.EP11.start.time",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": {
+            "start": {
+              "place": "NOT-AVAILABLE",
+              "time": "EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  },
+  {
+    "___marker": {
+      "labels": [
+        "#JournalWriter.v0.0.1"
+      ],
+      "version": 21
+    },
+    "action": "set",
+    "gets": {},
+    "path": "$.episodes.EP1.EP11.start.place",
+    "sets": {},
+    "value": {
+      "episodes": {
+        "EP1": {
+          "EP11": {
+            "start": {
+              "place": "EP11-Place",
+              "time": "EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"
+            }
+          },
+          "EP12": "[Circular reference found] Truncated by IDE",
+          "EP13": "[Circular reference found] Truncated by IDE",
+          "sequence": "[Circular reference found] Truncated by IDE"
+        },
+        "EP2": "[Circular reference found] Truncated by IDE",
+        "EP3": "[Circular reference found] Truncated by IDE"
+      },
+      "sequence": "[Circular reference found] Truncated by IDE"
+    }
+  }
+]
