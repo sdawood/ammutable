@@ -19,54 +19,54 @@ describe('Journal Writer', () => {
             journal => {
                 try {
                     expect(journal).toEqual(
-                        [
-                            {value: {}}, // @TODO: version 1 has no version tag
-                            {
-                                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
-                                "gets": expect.any(Function),
-                                "value": {"hello": "RP"},
-                                "sets": expect.any(Function)
-                            },
-                            {
-                                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
-                                "value": {
-                                    "bye": "Bad Code",
-                                    "hello": "RP"
-                                },
-                                "gets": expect.any(Function),
-                                "sets": expect.any(Function)
-                            },
-                            {
-                                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 3},
-                                "value": {
-                                    "bye": "Bad Code",
-                                    "hello": "RP",
-                                    "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                                },
-                                "gets": expect.any(Function),
-                                "sets": expect.any(Function)
-                            },
-                            {
-                                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 4},
-                                "value": {
-                                    "bye": "Bad Code",
-                                    "hello": "New World",
-                                    "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                                },
-                                "gets": expect.any(Function),
-                                "sets": expect.any(Function)
-                            },
-                            {
-                                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 5},
-                                "value": {
-                                    "bye": "Old World",
-                                    "hello": "New World",
-                                    "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                                },
-                                "gets": expect.any(Function),
-                                "sets": expect.any(Function)
+                        [{"value": {}}, {
+                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "path": "$.hello",
+                            "sets": expect.any(Function),
+                            "value": {"hello": "RP"}
+                        }, {
+                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "path": "$.bye",
+                            "sets": expect.any(Function),
+                            "value": {"bye": "Bad Code", "hello": "RP"}
+                        }, {
+                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 3},
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "path": "$.journaledPost",
+                            "sets": expect.any(Function),
+                            "value": {
+                                "bye": "Bad Code",
+                                "hello": "RP",
+                                "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
                             }
-                        ]
+                        }, {
+                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 4},
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "path": "$.hello",
+                            "sets": expect.any(Function),
+                            "value": {
+                                "bye": "Bad Code",
+                                "hello": "New World",
+                                "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
+                            }
+                        }, {
+                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 5},
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "path": "$.bye",
+                            "sets": expect.any(Function),
+                            "value": {
+                                "bye": "Old World",
+                                "hello": "New World",
+                                "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
+                            }
+                        }]
                     );
                     done();
                 } catch (error) {

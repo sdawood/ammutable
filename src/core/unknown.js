@@ -10,7 +10,7 @@ function* versioner(context) {
     let currentVersion = incrementVersion(1);
     while (true) {
         const controls = yield currentVersion;
-        show({controls: controls === undefined ? 'null' : controls});
+        // show({controls: controls === undefined ? 'null' : controls});
         const {forward = true, step = 1, backward = false} = controls || {};
         currentVersion = backward ? incrementer(currentVersion)(-step) : incrementer(currentVersion)(step);
     }
@@ -34,7 +34,7 @@ const Writer = subject => {
                 // RENAMING to gets/sets changed the behavior
                 const newValue = set(url)(value)(stream$.value.value);
                 show(typeof newValue);
-                const newWriter = Object.assign(new newValue.constructor(), {value: newValue}, _new(stream$));
+                const newWriter = Object.assign(new newValue.constructor(), {value: newValue, path: url, action: 'set'}, _new(stream$));
                 stream$.next(newWriter);
                 return newWriter;
             }
