@@ -3,7 +3,7 @@ const {take, toArray, distinctUntilChanged, distinctUntilKeyChanged} = require('
 
 const {get, set, apply} = require('json-atom');
 
-const {Writer} = require('./unknown');
+const {Writer} = require('./Sentient');
 const {show, aLine} = require('../../utils/trace');
 
 describe('Journal Writer', () => {

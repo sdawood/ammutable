@@ -1,7 +1,7 @@
 {
   "name": "json-prism",
   "version": "0.0.0-development",
-  "description": "Immutable Prisms, i.e. Taking a Multifoci Json Path to Immutability",
+  "description": "Immutable Prisms, i.e. Taking a Multifoci Json Path to Immutability, or A sentient item has some ability to communicate, either by sharing its emotions, broadcasting its thoughts telepathically, or speaking aloud.",
   "main": "lib/index.js",
   "scripts": {
     "commit": "git-cz",

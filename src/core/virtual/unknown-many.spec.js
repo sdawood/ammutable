@@ -2,7 +2,7 @@
 const F = require('functional-pipelines');
 
 const {sortByPath} = require('../../utils/sortByPath');
-const {MultiWriter} = require('./unknown-many');
+const {MultiWriter} = require('./SentientBatch');
 const {BehaviorSubject} = require('rxjs');
 const {take, toArray} = require('rxjs/operators');
 
@@ -91,7 +91,9 @@ describe('It should collect deep paths from existing stable-shaped-document (by 
             journal => {
                 try {
                     expect(journal.map(({gets, sets, ...rest}) => rest)).toEqual(require('./journal-expected-stringified'));
+                    // @NOTICE we strip out the gets/sets attrs before we compare with the JSON.stringified sanitized version of the json-tree
                     // journalLog.write(JSON.stringify(journal, null, 0) + '\n', undefined, done);
+
                     done();
                 } catch (error) {
                     done.fail(error);
@@ -102,7 +104,7 @@ describe('It should collect deep paths from existing stable-shaped-document (by 
         );
 
 
-        const multiCatcher = MultiWriter(journal)(pathList);
+        const multiCatcher = MultiWriter(journal, {labels: ['BatchSentient-007']})(pathList);
 
         const v1Values = ["EP2", "EP12", "EP11-Place", "EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)", "EP31-Place", "EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)", "EP32-Place", "EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)", "EP33-Place", "EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"];
 
@@ -112,10 +114,12 @@ describe('It should collect deep paths from existing stable-shaped-document (by 
         notAvailables.length = pathList.length;
         notAvailables.fill(('NOT-AVAILABLE'));
         const revisions = multiCatcher.updates(notAvailables);
-        expect(revisions).toEqual({
-                "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 11},
+        expect(revisions.version).toEqual(notAvailables.length);
+        expect(revisions).toEqual(
+            {
                 "action": "set",
                 "gets": expect.any(Function),
+                "labels": ["BatchSentient-007"],
                 "path": "$.episodes.EP1.EP11.start.place",
                 "sets": expect.any(Function),
                 "value": {
@@ -164,7 +168,8 @@ describe('It should collect deep paths from existing stable-shaped-document (by 
                             "sequence": ["EP31", "EP32", "EP33"]
                         }
                     }, "sequence": ["EP1", "NOT-AVAILABLE", "EP3"]
-                }
+                },
+                "version": 10
             }
         );
 

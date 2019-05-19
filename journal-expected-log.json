@@ -172,12 +172,10 @@
     },
     "path": "$.sequence[1]",
     "action": "set",
-    "___marker": {
-      "version": 2,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 1,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -266,12 +264,10 @@
     },
     "path": "$.episodes.EP3.EP33.start.time",
     "action": "set",
-    "___marker": {
-      "version": 3,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 2,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -360,12 +356,10 @@
     },
     "path": "$.episodes.EP3.EP33.start.place",
     "action": "set",
-    "___marker": {
-      "version": 4,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 3,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -454,12 +448,10 @@
     },
     "path": "$.episodes.EP3.EP32.start.time",
     "action": "set",
-    "___marker": {
-      "version": 5,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 4,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -548,12 +540,10 @@
     },
     "path": "$.episodes.EP3.EP32.start.place",
     "action": "set",
-    "___marker": {
-      "version": 6,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 5,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -642,12 +632,10 @@
     },
     "path": "$.episodes.EP3.EP31.start.time",
     "action": "set",
-    "___marker": {
-      "version": 7,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 6,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -736,12 +724,10 @@
     },
     "path": "$.episodes.EP3.EP31.start.place",
     "action": "set",
-    "___marker": {
-      "version": 8,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 7,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -830,12 +816,10 @@
     },
     "path": "$.episodes.EP1.sequence[1]",
     "action": "set",
-    "___marker": {
-      "version": 9,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 8,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -924,12 +908,10 @@
     },
     "path": "$.episodes.EP1.EP11.start.time",
     "action": "set",
-    "___marker": {
-      "version": 10,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 9,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1018,12 +1000,10 @@
     },
     "path": "$.episodes.EP1.EP11.start.place",
     "action": "set",
-    "___marker": {
-      "version": 11,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 10,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1112,12 +1092,10 @@
     },
     "path": "$.sequence[1]",
     "action": "set",
-    "___marker": {
-      "version": 12,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 11,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1206,12 +1184,10 @@
     },
     "path": "$.episodes.EP3.EP33.start.time",
     "action": "set",
-    "___marker": {
-      "version": 13,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 12,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1300,12 +1276,10 @@
     },
     "path": "$.episodes.EP3.EP33.start.place",
     "action": "set",
-    "___marker": {
-      "version": 14,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 13,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1394,12 +1368,10 @@
     },
     "path": "$.episodes.EP3.EP32.start.time",
     "action": "set",
-    "___marker": {
-      "version": 15,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 14,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1488,12 +1460,10 @@
     },
     "path": "$.episodes.EP3.EP32.start.place",
     "action": "set",
-    "___marker": {
-      "version": 16,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 15,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1582,12 +1552,10 @@
     },
     "path": "$.episodes.EP3.EP31.start.time",
     "action": "set",
-    "___marker": {
-      "version": 17,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 16,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1676,12 +1644,10 @@
     },
     "path": "$.episodes.EP3.EP31.start.place",
     "action": "set",
-    "___marker": {
-      "version": 18,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 17,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1770,12 +1736,10 @@
     },
     "path": "$.episodes.EP1.sequence[1]",
     "action": "set",
-    "___marker": {
-      "version": 19,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 18,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1864,12 +1828,10 @@
     },
     "path": "$.episodes.EP1.EP11.start.time",
     "action": "set",
-    "___marker": {
-      "version": 20,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 19,
+    "labels": [
+      "BatchSentient-007"
+    ]
   },
   {
     "value": {
@@ -1958,11 +1920,9 @@
     },
     "path": "$.episodes.EP1.EP11.start.place",
     "action": "set",
-    "___marker": {
-      "version": 21,
-      "labels": [
-        "#JournalWriter.v0.0.1"
-      ]
-    }
+    "version": 20,
+    "labels": [
+      "BatchSentient-007"
+    ]
   }
 ]
