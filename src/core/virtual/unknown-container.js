@@ -38,29 +38,30 @@ const shredder = (document, {modes = ['nodes'], order = 'node-leaf-groups'} = {}
 const Unshredder_Mode_Actors = {
     nodes: {
         unit: () => ({}),
-        orderKey: 'path',
         reducer: (acc, {path, value}) => {
             show(path, ':=', value);
             acc = set(path)(value)(acc);
             return acc;
-        }
+        },
+        orderKey: 'path'
     },
     pairs: {
         unit: () => ({}),
-        orderKey: 0,
         reducer: (acc, [path, value]) => {
             show(path, ':=', value);
             acc = set(path)(value)(acc);
             return acc;
-        }
+        },
+        orderKey: 0
     }
 };
 
-const unshredder = (pathValueRecords, {mode = 'nodes'} = {}) => {
-    const initFn = Unshredder_Mode_Actors[mode].unit;
-    const reducingFn = Unshredder_Mode_Actors[mode].reducer;
-    show(`reducingFn`, reducingFn);
-    return F.reduce(reducingFn, initFn, pathValueRecords.slice().sort(orderBy(Unshredder_Mode_Actors[mode].orderKey, 'node-leaf-groups')));
+const unshredder = ({nodes, pairs} = {}) => {
+    const {entries, mode} = nodes ? {entries: nodes, mode: 'nodes'} : {entries: pairs, mode: 'pairs'}; // give priority to nodes if both are passed in
+    const {unit: initFn, reducer: reducingFn} = Unshredder_Mode_Actors[mode];
+    console.log(mode, Unshredder_Mode_Actors[mode]);
+    console.log(initFn, reducingFn);
+    return F.reduce(reducingFn, initFn, entries.slice().sort(orderBy(Unshredder_Mode_Actors[mode].orderKey, 'node-leaf-groups')));
 };
 
 module.exports = {
