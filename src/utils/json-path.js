@@ -1,5 +1,4 @@
-// const jp = require('jsonpath/jsonpath.min');
-const jp = require('jsonpath');
+const jp = require('jsonpath/jsonpath.min');
 
 // const {show, aLine} = require('./trace');
 

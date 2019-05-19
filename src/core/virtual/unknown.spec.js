@@ -13,7 +13,7 @@ describe('Journal Writer', () => {
 
         // it('should gets as shades.get from subject.value', () => {
 
-        journal.subscribe(entry => show('+JournalEntry', ++clicks, entry, entry.gets ? entry.gets('$.hello') : 'NO .gets'));
+        journal.subscribe(entry => show('+JournalEntry', entry, entry.gets ? entry.gets('$.hello') : 'NO .gets'));
 
         journal.pipe(take(6), toArray()).subscribe(
             journal => {
@@ -88,7 +88,7 @@ describe('Journal Writer', () => {
         show({returns});
         show('JOURNAL-VALUE:', journal.value);
         show(Writer(journal).gets('$.hello'));
-        show(get('$.hello')(journal.value));
+        show(get('$.value.hello')(journal.value));
         show('JOURNAL-VALUE:', journal.value);
         // });
 
@@ -101,7 +101,9 @@ describe('Journal Writer', () => {
         .sets('$.bye')('Bad Code')
 // .get('bye')
         );
+        show('************************************');
         show('JOURNAL-VALUE:', journal.value);
+        show('************************************');
         journal.value.sets('$.journaledPost')({"timestamp": "2019-05-17T18:11:29.344Z", "author": "Shady Dawood"});
 
         const atom = journal.value;
