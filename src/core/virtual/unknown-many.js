@@ -60,7 +60,5 @@ const MultiWriter =  subject => (keys, {withoutKeys = [], sortUpdates = true} = 
 };
 
 module.exports = {
-    MultiWriter,
-    getPath: get,
-    setPath: set
+    MultiWriter
 };

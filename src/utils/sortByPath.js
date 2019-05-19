@@ -3,7 +3,7 @@ const {stringify} = require('./json-path');
 
 const {show} = require('./trace');
 
-const sortBy = (url, {mapping = v => v, asc = true} = {}) => (a, b) => {
+const sortByPath = (url, {mapping = v => v, asc = true} = {}) => (a, b) => {
     // url = typeof url === 'number' ? `${url}` : url;
 
     let [left, right] = asc ? [a, b] : [b, a];
@@ -17,4 +17,4 @@ const sortBy = (url, {mapping = v => v, asc = true} = {}) => (a, b) => {
 }
 
 
-module.exports = {sortBy};
+module.exports = {sortByPath};

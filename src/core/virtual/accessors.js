@@ -11,13 +11,13 @@ const catcher = function (keys, notKeys = []) {
             keys = newKeys ? newKeys : keys;
             return keys;
         },
-        [`___excluded`](newNotKeys) {
-            notKeys = newNotKeys ? newNotKeys : notKeys;
-            return notKeys;
-        },
-        [`filtered___`]() {
-
-        },
+        // [`___excluded`](newNotKeys) {
+        //     notKeys = newNotKeys ? newNotKeys : notKeys;
+        //     return notKeys;
+        // },
+        // [`filtered___`]() {
+        //
+        // },
         [`get___`](newValues) {
             if (newValues === undefined) {
                 const getter = getFrom(this);
@@ -50,7 +50,5 @@ const catcher = function (keys, notKeys = []) {
 };
 
 module.exports = {
-    catcher,
-    getPath: get,
-    setPath: set
+    catcher
 };

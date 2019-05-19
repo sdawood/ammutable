@@ -2,7 +2,6 @@ const {has, returns} = require('shades');
 const F = require('functional-pipelines');
 
 // const {set, get, apply} = require('../../index');
-const {sortBy} = require('../../util/sortBy');
 
 describe('scenario: shades', () => {
     it('inspiration:: should handle binding', () => {
@@ -23,7 +22,7 @@ describe('scenario: shades', () => {
     it('property accessors get/set do not survive shallow copying and turn into normal attributes', () => {
         const base = {
             get ['virtual']() {
-                console.log('GET-ATTR')
+                console.log('GET-ATTR');
                 return `Oh - ${this.tag}`;
             }
         };

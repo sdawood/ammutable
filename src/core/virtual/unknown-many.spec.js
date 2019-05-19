@@ -1,7 +1,7 @@
 // const {has, returns} = require('shades');
 const F = require('functional-pipelines');
 
-const {sortBy} = require('../../utils/sortBy');
+const {sortByPath} = require('../../utils/sortByPath');
 const {MultiWriter} = require('./unknown-many');
 const {BehaviorSubject} = require('rxjs');
 const {take, toArray} = require('rxjs/operators');
