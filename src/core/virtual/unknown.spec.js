@@ -13,59 +13,60 @@ describe('Journal Writer', () => {
 
         // it('should gets as shades.get from subject.value', () => {
 
-        journal.subscribe(entry => show('+JournalEntry', entry, entry.gets ? entry.gets('$.hello') : 'NO .gets'));
+        journal.subscribe(entry => show('+JournalEntry', entry, entry.gets ? entry.gets('$.hello') : 'Vanilla entry, no .gets!'));
 
         journal.pipe(take(6), toArray()).subscribe(
             journal => {
                 try {
                     expect(journal).toEqual(
                         [{"value": {}}, {
-                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
                             "action": "set",
                             "gets": expect.any(Function),
+                            "labels": ["origin: B"],
                             "path": "$.hello",
                             "sets": expect.any(Function),
-                            "value": {"hello": "RP"}
+                            "value": {"hello": "RP"},
+                            "version": 1
                         }, {
-                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 2},
                             "action": "set",
                             "gets": expect.any(Function),
+                            "labels": ["origin: C"],
+                            "path": "$.hello",
+                            "sets": expect.any(Function),
+                            "value": {"hello": "RP"},
+                            "version": 1
+                        }, {
+                            "action": "set",
+                            "gets": expect.any(Function),
+                            "labels": ["origin: E"],
                             "path": "$.bye",
                             "sets": expect.any(Function),
-                            "value": {"bye": "Bad Code", "hello": "RP"}
+                            "value": {"bye": "Bad Code", "hello": "RP"},
+                            "version": 1
                         }, {
-                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 3},
                             "action": "set",
                             "gets": expect.any(Function),
+                            "labels": ["origin: E"],
                             "path": "$.journaledPost",
                             "sets": expect.any(Function),
                             "value": {
                                 "bye": "Bad Code",
                                 "hello": "RP",
                                 "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                            }
+                            },
+                            "version": 2
                         }, {
-                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 4},
                             "action": "set",
                             "gets": expect.any(Function),
+                            "labels": ["origin: E"],
                             "path": "$.hello",
                             "sets": expect.any(Function),
                             "value": {
                                 "bye": "Bad Code",
                                 "hello": "New World",
                                 "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                            }
-                        }, {
-                            "___marker": {"labels": ["#JournalWriter.v0.0.1"], "version": 5},
-                            "action": "set",
-                            "gets": expect.any(Function),
-                            "path": "$.bye",
-                            "sets": expect.any(Function),
-                            "value": {
-                                "bye": "Old World",
-                                "hello": "New World",
-                                "journaledPost": {"author": "Shady Dawood", "timestamp": "2019-05-17T18:11:29.344Z"}
-                            }
+                            },
+                            "version": 3
                         }]
                     );
                     done();
@@ -78,16 +79,18 @@ describe('Journal Writer', () => {
         );
 
         show('JOURNAL-VALUE:', journal.value);
-        show(Writer(journal).gets('$.hello'));
-        show(get('$.hello')(journal.value));
+        show(Writer(journal, {labels: ['origin: A']}).gets('$.hello')); // should not be there yet
+        show(get('$.hello')(journal.value));  // should not be there yet
         // });
 
 
         // it('should gets what it sets regardless', () => {
-        const returns = Writer(journal).sets('$.hello')('RP');
+        const returns = Writer(journal, {labels: ['origin: B']}).sets('$.hello')('RP');
         show({returns});
+        show(`repeat the action, check on version`);
+        Writer(journal, {labels: ['origin: C']}).sets('$.hello')('RP');
         show('JOURNAL-VALUE:', journal.value);
-        show(Writer(journal).gets('$.hello'));
+        show(Writer(journal, {labels: ['origin: D']}).gets('$.hello'));
         show(get('$.value.hello')(journal.value));
         show('JOURNAL-VALUE:', journal.value);
         // });
@@ -97,7 +100,7 @@ describe('Journal Writer', () => {
         show(aLine(100));
 
         // it('should still sets and gets even after a journey', () => {
-        show(Writer(journal)
+        show(Writer(journal, {labels: ['origin: E']})
         .sets('$.bye')('Bad Code')
 // .get('bye')
         );
@@ -107,6 +110,7 @@ describe('Journal Writer', () => {
         journal.value.sets('$.journaledPost')({"timestamp": "2019-05-17T18:11:29.344Z", "author": "Shady Dawood"});
 
         const atom = journal.value;
+        show(`doing the actions via the same atom achieves monotonic version generator.next() calls`);
         show(atom.gets('$.hello'));
         show(atom.gets('$.bye'));
         show(atom.gets('$.journaledPost'));
@@ -119,11 +123,6 @@ describe('Journal Writer', () => {
         show(atom.gets('$.bye'));
         show(atom.gets('$.journaledPost'));
         show('JOURNAL-VALUE:', journal.value);
-        show(journal.value.___marker);
-        show(journal.value.___marker);
-        show(journal.value.___marker);
-        show(journal.value.___marker);
-        show(journal.value.___marker);
         // });
         // });
     });

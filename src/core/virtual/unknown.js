@@ -2,11 +2,12 @@ const {BehaviorSubject, ReplaySubject, Subject} = require('rxjs');
 const {get, set, apply} = require('json-atom');
 const {show, aLine} = require('../../utils/trace');
 const {incrementalVersioner} = require('./version/generator');
+const uuidV4 = require('uuid/v4');
 
-const Writer = subject => {
+const Writer = (subject, {labels = [uuidV4()]} = {}) => {
     const startValue = {type: 'SnapShot', payload: subject.value};
     let ___init___ = true;
-    const versionBy = incrementalVersioner(); //@TODO: injectable versionProvider
+    const versionBy = incrementalVersioner(); //@TODO: injectable versionProvider, otherwise every Writer is versioned independently
     const versionNext = () => {
         const {done, value} = versionBy.next();
         if (done) throw new Error('Version Generator Completed. Can not get next version value.');
@@ -31,7 +32,7 @@ const Writer = subject => {
                     {
                         value: newValue, path: url, action: 'set',
                         version: versionNext(), // @TODO a hashing-versioner can get the newValue passed into versionNext() to help version by digests and md5 hashes
-                        labels: ['#JournalWriter.v0.0.1']
+                        labels: labels
                     }, _new(stream$));
                 stream$.next(newWriter);
                 return newWriter;

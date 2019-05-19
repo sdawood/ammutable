@@ -17,7 +17,8 @@
     "json-atom": "^1.2.1",
     "jsonpath": "^1.0.1",
     "rxjs": "^6.5.2",
-    "shades": "^2.0.0"
+    "shades": "^2.0.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^6.0.1",
