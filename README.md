@@ -4,45 +4,53 @@ master|develop|npm
 
 # rp
 ```
-    const {get, set, apply} = require('rp');
-    const data = {
-        user: {
-            contact: {
-                home: {
-                    number: 11111
-                }, mobile: {
-                    number: 22222
+describe('scenario: unprism', () => {
+    it('works: ', done => {
+        const journal = new BehaviorSubject({value: series});
+        journal.subscribe(
+            journalEntry => show({journalEntry}),
+            error => show('Error:', error),
+            () => show(`ALL-DONE`)
+        );
+
+        journal.pipe(take(4), toArray()).subscribe(
+            journal => {
+                try {
+                    // expect(journal[1].value.episodes.EP2.EP21.start.place).toEqual('La La');
+                    // expect(journal[2].value.episodes.EP3.EP33.start.place).toEqual('LAND');
+
+                    done();
+                } catch (error) {
+                    done.fail(error);
                 }
             },
-            posts: [
-                {content: 'Hello World!', likes: 10},
-                {content: 'Goodbye World!', likes: 1}
-            ]
-        }
-    };
+            error => done.fail(error),
+            () => /*journalLog.end(`@clicks: ${clicks}`),*/ show('ALL-DONE')
+        );
 
-    let result = get('$.user.contact.home.number')(data);
-    // 11111
+        const resultNodes = Unprism(journal, {labels: ['Unprism-Test']})(
+            {
+                nodes: [
+                    {path: `$.episodes.EP2.EP21.start.place`, value: 'La La'},
+                    {path: `$.episodes.EP3.EP33.start.place`, value: 'LAND'}
+                ]
+            }
+        );
 
-    result = get('$.user.contact["home","mobile"].number')(data);
-    // {home: 11111, mobile: 22222}
+        // expect(resultNodes.value).toEqual({});
+        expect(resultNodes.value.episodes.EP2.EP21.start.place).toEqual('La La');
+        expect(resultNodes.value.episodes.EP3.EP33.start.place).toEqual('LAND');
 
-    result = set('$.user.contact["home","mobile"].number')(99999)(data)
+        expect(resultNodes.multiWriter.___included()).toEqual(['$.episodes.EP2.EP21.start.place', '$.episodes.EP3.EP33.start.place']);
+        const {value} = resultNodes.multiWriter.updates(['lA lA', 'land']);
+        expect(value.episodes.EP2.EP21.start.place).toEqual('lA lA');
+        expect(value.episodes.EP3.EP33.start.place).toEqual('land');
 
-    // set is Immutable, data hasn't been modified, a new refernece is returned
-    // lenses powering rp effectively behave like HAMT
-    // They only create new objects for the nodes from root to path, the rest of the structure is shared.
+        const updates = resultNodes.multiWriter.updates();
+        expect(updates).toEqual(['lA lA', 'land']);
 
-    // {"user":{"contact":{"home":{"number":99999},"mobile":{"number":99999}},"posts":[{"content":"Hello World!","likes":10},{"content":"Goodbye World!","likes":1}]}}
-
-    // number fields under both branches, namely 'home' AND 'mobile' are both set to value in the new object reference
-
-
-
-
-
-
-
+    });
+});
 ```
 
 ## Possible use cases
