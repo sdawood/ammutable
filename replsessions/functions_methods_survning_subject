@@ -1,0 +1,26 @@
+({BehaviorSubject} = require('rxjs'))
+portal = new BehaviorSubject()
+o = {sayHello: (name) => `hello ${name}`}
+o.sayHello('stand alone')
+portal.subscribe(o => console.log(o.sayHello, typeof o.sayHello))
+portal.next(o)
+portal.next(o)
+portal.subscribe(o => o.sayHello && console.log(o.sayHello, typeof o.sayHello))
+portal.next(o)
+portal.subscribe(o => o.sayHello && console.log(o.sayHello, typeof o.sayHello, o.sayHello('From The Other Side')))
+portal.next(o)
+bo = {selfish: () => `hello ${this.name}`, name: 'Traveller'}
+bo.selfish()
+bo = {name: 'Traveller', selfish: () => `hello ${this.name}`}
+bo.selfish()
+bo = {name: 'Traveller', selfish () { return `hello ${this.name}`} }
+bo.selfish()
+portal.next(bo)
+portal.subscribe(o => o.sayHello && console.log(o.selfish, typeof o.selfish, o.selfish()))
+portal.next(bo)
+bo.selfish()
+portal.value.selfish()
+portal.subscribe(o => o.selfish && console.log(o.sayHello, typeof o.sayHello, o.sayHello('From The Other Side')))
+portal.subscribe(o => o.selfish && console.log(o.selfish, typeof o.selfish, o.selfish()))
+portal.next(bo)
+

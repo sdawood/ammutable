@@ -1,0 +1,567 @@
+/Users/sdawood/.nvm/versions/node/v8.3.0/bin/node --require /Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/helpers/jest-intellij/lib/jest-intellij-stdin-fix.js /Users/sdawood/.nvm/versions/node/v8.3.0/lib/node_modules/jest-cli/bin/jest.js --colors --reporters /Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/helpers/jest-intellij/lib/jest-intellij-reporter.js --verbose --testPathPattern ^/Users/sdawood/workspace/rp/src/core/virtual/unknown-many\.spec\.js$
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- +JournalEntry 1 {"value":{"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}} NO .gets
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- ALL-DONE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- GET-ATTR:: ["$.sequence[1]","$.episodes.EP1.sequence[1]","$.episodes.EP1.EP11.start.place","$.episodes.EP1.EP11.start.time","$.episodes.EP3.EP31.start.place","$.episodes.EP3.EP31.start.time","$.episodes.EP3.EP32.start.place","$.episodes.EP3.EP32.start.time","$.episodes.EP3.EP33.start.place","$.episodes.EP3.EP33.start.time"]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.sequence[1]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.sequence[1]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.EP11.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.EP11.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP31.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP31.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP32.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP32.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP33.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP33.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- {"sortedPairs":[["$.sequence[1]","NOT-AVAILABLE"],["$.episodes.EP3.EP33.start.time","NOT-AVAILABLE"],["$.episodes.EP3.EP33.start.place","NOT-AVAILABLE"],["$.episodes.EP3.EP32.start.time","NOT-AVAILABLE"],["$.episodes.EP3.EP32.start.place","NOT-AVAILABLE"],["$.episodes.EP3.EP31.start.time","NOT-AVAILABLE"],["$.episodes.EP3.EP31.start.place","NOT-AVAILABLE"],["$.episodes.EP1.sequence[1]","NOT-AVAILABLE"],["$.episodes.EP1.EP11.start.time","NOT-AVAILABLE"],["$.episodes.EP1.EP11.start.place","NOT-AVAILABLE"]]}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.sequence[1] := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP33.start.time := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP33.start.place := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP32.start.time := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP32.start.place := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP31.start.time := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP31.start.place := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.sequence[1] := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.EP11.start.time := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.EP11.start.place := NOT-AVAILABLE
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- SET-ATTR:: 10 updates in total
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- {"sortedPairs":[["$.sequence[1]","EP2"],["$.episodes.EP3.EP33.start.time","EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"],["$.episodes.EP3.EP33.start.place","EP33-Place"],["$.episodes.EP3.EP32.start.time","EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"],["$.episodes.EP3.EP32.start.place","EP32-Place"],["$.episodes.EP3.EP31.start.time","EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"],["$.episodes.EP3.EP31.start.place","EP31-Place"],["$.episodes.EP1.sequence[1]","EP12"],["$.episodes.EP1.EP11.start.time","EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"],["$.episodes.EP1.EP11.start.place","EP11-Place"]]}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","NOT-AVAILABLE","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"NOT-AVAILABLE","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"NOT-AVAILABLE","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"NOT-AVAILABLE","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","NOT-AVAILABLE","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"NOT-AVAILABLE"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- >* {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"NOT-AVAILABLE","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- object
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.sequence[1] := EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP33.start.time := EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP33.start.place := EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP32.start.time := EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP32.start.place := EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP31.start.time := EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP3.EP31.start.place := EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.sequence[1] := EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.EP11.start.time := EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- $.episodes.EP1.EP11.start.place := EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- SET-ATTR:: 10 updates in total
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- GET-ATTR:: ["$.sequence[1]","$.episodes.EP1.sequence[1]","$.episodes.EP1.EP11.start.place","$.episodes.EP1.EP11.start.time","$.episodes.EP3.EP31.start.place","$.episodes.EP3.EP31.start.time","$.episodes.EP3.EP32.start.place","$.episodes.EP3.EP32.start.time","$.episodes.EP3.EP33.start.place","$.episodes.EP3.EP33.start.time"]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.sequence[1]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP2
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.sequence[1]
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP12
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.EP11.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP1.EP11.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP31.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP31.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP32.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP32.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP33.start.place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33-Place
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << K:: $.episodes.EP3.EP33.start.time
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- << V:: EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > {"sequence":["EP1","EP2","EP3"],"episodes":{"EP1":{"sequence":["EP11","EP12","EP13"],"EP11":{"start":{"place":"EP11-Place","time":"EP11 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP12":{"start":{"place":"EP12-Place","time":"EP12 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP13":{"start":{"place":"EP13-Place","time":"EP13 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP2":{"sequence":["EP21","EP22","EP23"],"EP21":{"start":{"place":"EP21-Place","time":"EP21 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP22":{"start":{"place":"EP22-Place","time":"EP22 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP23":{"start":{"place":"EP23-Place","time":"EP23 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}},"EP3":{"sequence":["EP31","EP32","EP33"],"EP31":{"start":{"place":"EP31-Place","time":"EP31 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP32":{"start":{"place":"EP32-Place","time":"EP32 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}},"EP33":{"start":{"place":"EP33-Place","time":"EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)"}}}}}
+
+  console.log src/utils/trace.js:1
+    DEBUG:: ---------- > EP33 @ Wed May 15 2019 23:48:27 GMT+0200 (EET)

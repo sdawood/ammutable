@@ -1,0 +1,77 @@
+({Unshredder_Mode_Atom_Actors} = require('./src/core/virtual/unknown-container'))
+Unshredder_Mode_Atom_Actors.pairs.reducer
+Unshredder_Mode_Atom_Actors['pairs'].reducer
+Unshredder_Mode_Atom_Actors['nodes'].reducer
+d = {}
+a = []
+new d.constructor()
+new a.constructor()
+x = 5
+new a.constructor()
+new x.constructor()
+y = _
+y
+y + 5
+y
+w = 5
+y + w
+w + y
+y.toExponential()
+t = new Number(1000)
+t + 100
+t.toExponential()
+f = new t.constructor()
+f = new t.constructor(.025))
+f = new t.constructor(.025)
+f.toString(10)
+f.toString(2)
+f.toString(4)
+f.toString(8)
+f.toString(10)
+f.toString(32)
+parseInt(f.toString(32), 32)
+f
+parseInt(f.toString(32), 10)
+parseInt(f.toString(32), 32)
+f
+Object.assign(new f.constructor(), {value: 'newValue', path: 'url', action: 'set'})
+magical = _
+_ + 10
+_  = 1000
+magical
+magical.value = 'Stash of my previous value of a number on the number'
+magical
+magical = 100
+magical
+magical = Object.assign(new f.constructor(), {value: 'newValue', path: 'url', action: 'set'})
+magical + 100
+magical - 4
+magical = Object.assign(new f.constructor(1000), {value: 'newValue', path: 'url', action: 'set'})
+magical - 74
+magical + 294
+magical.value
+magical.version = 1
+magical
+magical * 9
+setMagical = mag => value => {mag.value = value; mag = value, mag.version ? ++mag.version : void(0);}
+setAmount = setMagical(magical)
+setAmount(343)
+magical
+commitMagical = mag => () => {mag = mag.value;} // now its committed to being a number}
+magical
+commit = commitMagical(magical)
+commit()
+magical
+setAmount(500)
+magical
+commitMagical = mag => () => {mag = mag.value;} // now its committed to being a number}
+commit = commitMagical(magical)
+commit()
+magical
+commitMagical = mag => () => {const value = mag.value; mag = value;} // now its committed to being a number}
+commit = commitMagical(magical)
+commit()
+magical
+magical = 343
+magical
+And that was the end of another VERY INTERESTING side track
