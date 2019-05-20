@@ -21,7 +21,7 @@ const Writer = (subject, {labels = [uuidV4()]} = {}) => {
         },
         sets(url) {
             return value => {
-                show('>* current:', stream$.value.value);
+                show(`>* ${url} current:`, stream$.value.value);
                 // LOoOK_OvEr_hErE @TODO: NOTICE HOW THE SHADES.SET FOUND MY get(), THAT'S A PORTAL BACK INTO SHADES,
                 // RENAMING to gets/sets changed the behavior
                 const newValue = set(url)(value)(stream$.value.value);

@@ -2,7 +2,7 @@ const show = (...args) => console.log('DEBUG::', aLine(), ...args.map(arg => typ
 const aLine = (length = 5) => (a = [], a.length = 10, a.fill('-')).join('');
 
 module.exports = {
-    show,
+    show: () => {},
     aLine
 };
 

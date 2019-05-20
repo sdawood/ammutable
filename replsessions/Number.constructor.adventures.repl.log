@@ -1,7 +1,7 @@
-({Unshredder_Mode_Actors} = require('./src/core/virtual/unknown-container'))
-Unshredder_Mode_Actors.pairs.reducer
-Unshredder_Mode_Actors['pairs'].reducer
-Unshredder_Mode_Actors['nodes'].reducer
+({Unshredder_Mode_Atom_Actors} = require('./src/core/virtual/unknown-container'))
+Unshredder_Mode_Atom_Actors.pairs.reducer
+Unshredder_Mode_Atom_Actors['pairs'].reducer
+Unshredder_Mode_Atom_Actors['nodes'].reducer
 d = {}
 a = []
 new d.constructor()
