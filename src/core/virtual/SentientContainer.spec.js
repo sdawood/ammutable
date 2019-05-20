@@ -39,7 +39,7 @@ describe('scenario: unshredder', () => {
 });
 
 describe('scenario: unprism', () => {
-    it('works: ', done => {
+    it('works: for nodes mode', done => {
         const journal = new BehaviorSubject({value: series});
         journal.subscribe(
             journalEntry => show({journalEntry}),
@@ -76,6 +76,50 @@ describe('scenario: unprism', () => {
         expect(resultNodes.value.episodes.EP3.EP33.start.place).toEqual('LAND');
 
         expect(resultNodes.multiWriter.___included()).toEqual(['$.episodes.EP2.EP21.start.place', '$.episodes.EP3.EP33.start.place']);
+        const {value} = resultNodes.multiWriter.updates(['lA lA', 'land']);
+        expect(value.episodes.EP2.EP21.start.place).toEqual('lA lA');
+        expect(value.episodes.EP3.EP33.start.place).toEqual('land');
+
+        const updates = resultNodes.multiWriter.updates();
+        expect(updates).toEqual(['lA lA', 'land']);
+
+    });
+    it('works: for pairs', done => {
+        const journal = new BehaviorSubject({value: {}});
+        journal.subscribe(
+            journalEntry => show({journalEntry}),
+            error => show('Error:', error),
+            () => show(`ALL-DONE`)
+        );
+
+        journal.pipe(take(4), toArray()).subscribe(
+            journal => {
+                try {
+                    // expect(journal[1].value.episodes.EP2.EP21.start.place).toEqual('La La');
+                    // expect(journal[2].value.episodes.EP3.EP33.start.place).toEqual('LAND');
+
+                    done();
+                } catch (error) {
+                    done.fail(error);
+                }
+            },
+            error => done.fail(error),
+            () => /*journalLog.end(`@clicks: ${clicks}`),*/ show('ALL-DONE')
+        );
+
+        const resultNodes = Unprism(journal, {labels: ['Unprism-Test']})(
+            {
+                paris: [
+                    [`$.a.name`, 'James Bond'],
+                    [`$.a`, {}]
+                ]
+            }
+        );
+
+        // expect(resultNodes.value).toEqual({});
+        expect(resultNodes.value.a.name).toEqual('James Bond');
+
+        expect(resultNodes.multiWriter.___included()).toEqual([]);
         const {value} = resultNodes.multiWriter.updates(['lA lA', 'land']);
         expect(value.episodes.EP2.EP21.start.place).toEqual('lA lA');
         expect(value.episodes.EP3.EP33.start.place).toEqual('land');
