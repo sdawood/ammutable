@@ -1,7 +1,7 @@
 // Available settings at http://eslint.org/docs/user-guide/configuring
 module.exports = {
     "ecmaVersion": "6",
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint",
     "ecmaFeatures": {
         "impliedStrict": true
     },

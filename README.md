@@ -58,7 +58,7 @@ master|develop|npm
 ## FAQs
 
 ## Build Targets
-Currently the following target build environments are configured for babel-preset-env plugin
+Currently the following target build environments are configured for @babel/preset-env plugin
 ```
  "targets": {
    "node": 4.3,
