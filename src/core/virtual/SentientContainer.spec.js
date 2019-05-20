@@ -1,6 +1,6 @@
 const F = require('functional-pipelines');
 
-const {shredder, unshredder} = require('./unknown-container');
+const {shredder, unshredder} = require('./SentientContainer');
 
 const series = require('./mini-series.data');
 
@@ -10,6 +10,9 @@ describe('scenario: shredder', () => {
         const expectedResult = {
             nodes: [{"path": "$.episodes"}, {"path": "$.episodes.EP1"}, {"path": "$.episodes.EP1.EP11"}, {"path": "$.episodes.EP1.EP11.start"}, {"path": "$.episodes.EP1.EP11.start.place"}, {"path": "$.episodes.EP1.EP11.start.time"}, {"path": "$.episodes.EP1.EP12"}, {"path": "$.episodes.EP1.EP12.start"}, {"path": "$.episodes.EP1.EP12.start.place"}, {"path": "$.episodes.EP1.EP12.start.time"}, {"path": "$.episodes.EP1.EP13"}, {"path": "$.episodes.EP1.EP13.start"}, {"path": "$.episodes.EP1.EP13.start.place"}, {"path": "$.episodes.EP1.EP13.start.time"}, {"path": "$.episodes.EP1.sequence"}, {"path": "$.episodes.EP1.sequence[0]"}, {"path": "$.episodes.EP1.sequence[1]"}, {"path": "$.episodes.EP1.sequence[2]"}, {"path": "$.episodes.EP2"}, {"path": "$.episodes.EP2.EP21"}, {"path": "$.episodes.EP2.EP21.start"}, {"path": "$.episodes.EP2.EP21.start.place"}, {"path": "$.episodes.EP2.EP21.start.time"}, {"path": "$.episodes.EP2.EP22"}, {"path": "$.episodes.EP2.EP22.start"}, {"path": "$.episodes.EP2.EP22.start.place"}, {"path": "$.episodes.EP2.EP22.start.time"}, {"path": "$.episodes.EP2.EP23"}, {"path": "$.episodes.EP2.EP23.start"}, {"path": "$.episodes.EP2.EP23.start.place"}, {"path": "$.episodes.EP2.EP23.start.time"}, {"path": "$.episodes.EP2.sequence"}, {"path": "$.episodes.EP2.sequence[0]"}, {"path": "$.episodes.EP2.sequence[1]"}, {"path": "$.episodes.EP2.sequence[2]"}, {"path": "$.episodes.EP3"}, {"path": "$.episodes.EP3.EP31"}, {"path": "$.episodes.EP3.EP31.start"}, {"path": "$.episodes.EP3.EP31.start.place"}, {"path": "$.episodes.EP3.EP31.start.time"}, {"path": "$.episodes.EP3.EP32"}, {"path": "$.episodes.EP3.EP32.start"}, {"path": "$.episodes.EP3.EP32.start.place"}, {"path": "$.episodes.EP3.EP32.start.time"}, {"path": "$.episodes.EP3.EP33"}, {"path": "$.episodes.EP3.EP33.start"}, {"path": "$.episodes.EP3.EP33.start.place"}, {"path": "$.episodes.EP3.EP33.start.time"}, {"path": "$.episodes.EP3.sequence"}, {"path": "$.episodes.EP3.sequence[0]"}, {"path": "$.episodes.EP3.sequence[1]"}, {"path": "$.episodes.EP3.sequence[2]"}, {"path": "$.sequence"}, {"path": "$.sequence[0]"}, {"path": "$.sequence[1]"}, {"path": "$.sequence[2]"}]
         };
+
+        expect(result.nodes.map(({path}) => ({path}))).toEqual(expectedResult.nodes);
+
         expect(result.nodes.map(({path, value}) => [path, value]))
         .toEqual(result.pairs);
 

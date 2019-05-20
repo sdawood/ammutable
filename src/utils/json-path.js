@@ -1,6 +1,6 @@
 const jp = require('jsonpath/jsonpath.min');
 
-// const {show, aLine} = require('./trace');
+const {show, aLine} = require('./trace');
 
 // from node_modules/jsonpath/lib/index.js:192
 const normalize = function (path) {
@@ -58,14 +58,16 @@ const normalize = function (path) {
 
 const stringify = variousPathFormats => {
     const ast = normalize(variousPathFormats);
-    // show(ast);
+    // show(`ast:`, ast);
     const parts = ast.map(({expression: {value}}) => value); // @TODO: union and descendant expressions are nested, may be recursive-reduce is best fit
-    // show(parts);
+    // show({parts});
     // show(typeof parts[0]);
     const partsStartsWithNonNumeric = [typeof parts[0] === 'number' ? `${parts[0]}` : parts[0], ...parts.slice(1)]; // FIX FOR: the code accepts [1, 'a'], [1] but barfs on 1 as standalone numeric subscript for root at index === 0
     // show(`>>># before stringify`, partsStartsWithNonNumeric);
     // show(`partsStartsWithNonNumeric:`, partsStartsWithNonNumeric);
-    return jp.stringify(partsStartsWithNonNumeric);
+    const stringified = jp.stringify(partsStartsWithNonNumeric);
+    // show(stringified);
+    return stringified;
 };
 
 module.exports = {

@@ -7,30 +7,37 @@ const {stringify} = require('../../utils/json-path');
 const {show, aLine} = require('../../utils/trace');
 
 const Shredder_Mode_Actors = {
-    [undefined]: x => x,
-    nodes: ({path, value}) => ({path: stringify(path), value}),
-    pairs: ({path, value}) => [stringify(path), value],
-    paths: x => stringify(x.path),
-    values: x => x.value
+    // @TODO NOTICE having the parameter called toString had some unusual behavior with jest test, toString was invoked by some other piece of code!!!
+    nodes: ({toStringFn = stringify} = {}) => ({path, value}) => ({path: toStringFn(path), value}),
+    pairs: ({toStringFn = stringify} = {}) => ({path, value}) => [toStringFn(path), value],
+    paths: ({toStringFn = stringify} = {}) => x => toStringFn(x.path),
+    values: () => x => x.value
 };
 
-const orderBy = (key, order) => {
-    return ['asc', 'node-leaf-groups'].includes(order)
-        ? (a, b) => +(a[key] > b[key]) || +(a[key] === b[key]) - 1
-        : ['desc', 'leaf-node-groups'].includes(order)
-            ? (a, b) => +(b[key] > a[key]) || +(b[key] === a[key]) - 1
-            : (() => {
-                throw new Error(`Invalid options.order: ${order}`);
-            })()
+const orderBy = (key, order, {xf = x => x} = {}) => {
+    let compareFunction;
+    if (['asc', 'node-leaf-groups'].includes(order)) {
+        compareFunction = (a, b) => +(xf(a[key]) > xf(b[key])) || +(xf(a[key]) === xf(b[key])) - 1;
+    } else if (['desc', 'leaf-node-groups'].includes(order)) {
+        compareFunction = (a, b) => +(xf(b[key]) > xf(a[key])) || +(xf(b[key]) === xf(a[key])) - 1
+    }
+    return compareFunction; // undefined triggers built-int array sort, which is idea for stringified paths or natural values
 };
 
 const shredder = (document, {modes = ['nodes'], order = 'node-leaf-groups'} = {}) => {
-    const nodes = jp.nodes(document, '$..*')
-    .sort(orderBy('path', order));
+    let nodes = jp.nodes(document, '$..*');
+    show(nodes);
+    nodes = nodes
+    .sort(orderBy('path', order, {xf: ps => ps.join('.')}));
+    show(nodes);
+    nodes = nodes
+    .map(Shredder_Mode_Actors['nodes']());
+    show(nodes);
     // @TODO: investigate other sorting semantics, like bfs and dfs
 
     return modes.reduce((acc, mode) => {
-        acc[mode] = nodes.map(Shredder_Mode_Actors[mode]);
+        const compareFunction = Unshredder_Mode_Actors[mode] !== undefined ? orderBy(Unshredder_Mode_Actors[mode].orderKey, order) : undefined;
+        acc[mode] = nodes.map(Shredder_Mode_Actors[mode]()); //.sort(compareFunction);
         return acc;
     }, {});
 };
