@@ -1,16 +1,17 @@
 const F = require('functional-pipelines');
 
 const {get, set, apply} = require('json-atom');
-const {Writer} = require('../unknown');
+const {Writer} = require('./Sentient');
 
 const {show, aLine} = require('../../utils/trace');
+const uuidV4 = require('uuid/v4');
 
 const normalizePath = path => path[0] === '$' ? path : `$.${path}`;
 
 // @TODO: BASIC IDEA, a catcher can get nodes, upon setting it would use the unknown bound to a stream, and return jsonpath nodes that can be materialized into an active dictionary
 
-const MultiWriter =  subject => (keys, {withoutKeys = [], sortUpdates = true} = {}) => {
-    let journalWriter = Writer(subject);
+const MultiWriter =  (subject, {labels = [uuidV4()]} = {}) => (keys, {withoutKeys = [], sortUpdates = true} = {}) => {
+    let journalWriter = Writer(subject, {labels});
     const setInto = writer => path => value => writer.sets(normalizePath(path))(value);
     const getFrom = writer => path => writer.gets(normalizePath(path));
 
@@ -37,8 +38,8 @@ const MultiWriter =  subject => (keys, {withoutKeys = [], sortUpdates = true} = 
                 const ___included = this.___included();
 
                 const reducingFn = ({revisionSetter, value}, [k, nV]) => {
-                    const newRevision = revisionSetter(k)(nV); // @TODO: do we need to create a new setter into a new Writer ever?
-                    return {revisionSetter: setter, value: newRevision};
+                    const newRevision = revisionSetter(k)(nV);
+                    return {revisionSetter: setter, value: newRevision}; // @TODO: do we need to create a new setter into a new Writer ever?
                 };
                 const initFn = () => ({revisionSetter: setter});
                 const sortBy = (a, b) => +(b[0] > a[0]) || +(b[0] === a[0]) - 1;
@@ -60,7 +61,5 @@ const MultiWriter =  subject => (keys, {withoutKeys = [], sortUpdates = true} = 
 };
 
 module.exports = {
-    MultiWriter,
-    getPath: get,
-    setPath: set
+    MultiWriter
 };
