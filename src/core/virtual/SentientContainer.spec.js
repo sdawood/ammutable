@@ -50,8 +50,9 @@ describe('scenario: unprism', () => {
         journal.pipe(take(4), toArray()).subscribe(
             journal => {
                 try {
-                    // expect(journal[1].value.episodes.EP2.EP21.start.place).toEqual('La La');
-                    // expect(journal[2].value.episodes.EP3.EP33.start.place).toEqual('LAND');
+                    // expect(journal[0].value.episodes.EP2.EP21.start.place).toEqual('EP21-Place');
+                    expect(journal[1].value.episodes.EP2.EP21.start.place).toEqual('La La');
+                    expect(journal[2].value.episodes.EP3.EP33.start.place).toEqual('LAND');
 
                     done();
                 } catch (error) {
@@ -71,7 +72,7 @@ describe('scenario: unprism', () => {
             }
         );
 
-        // expect(resultNodes.value).toEqual({});
+        // expect(resultNodes.version).toEqual(0);
         expect(resultNodes.value.episodes.EP2.EP21.start.place).toEqual('La La');
         expect(resultNodes.value.episodes.EP3.EP33.start.place).toEqual('LAND');
 

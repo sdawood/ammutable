@@ -10,7 +10,7 @@ const normalizePath = path => path[0] === '$' ? path : `$.${path}`;
 
 // @TODO: BASIC IDEA, a catcher can get nodes, upon setting it would use the unknown bound to a stream, and return jsonpath nodes that can be materialized into an active dictionary
 
-const MultiWriter =  (subject, {labels = [uuidV4()]} = {}) => (keys, {withoutKeys = [], sortUpdates = true} = {}) => {
+const MultiWriter =  (subject, {labels = [uuidV4()]} = {}) => (keys, {withoutKeys = [], sortUpdates = false} = {}) => {
     let journalWriter = Writer(subject, {labels});
     const setInto = writer => path => value => writer.sets(normalizePath(path))(value);
     const getFrom = writer => path => writer.gets(normalizePath(path));
@@ -42,8 +42,8 @@ const MultiWriter =  (subject, {labels = [uuidV4()]} = {}) => (keys, {withoutKey
                     return {revisionSetter: setter, value: newRevision}; // @TODO: do we need to create a new setter into a new Writer ever?
                 };
                 const initFn = () => ({revisionSetter: setter});
-                const sortBy = (a, b) => +(b[0] > a[0]) || +(b[0] === a[0]) - 1;
-                const sortedPairs = sortUpdates ? [...F.zip(___included, newValues)].sort(sortBy) : F.zip(___included, newValues);
+                const sortBy = (a, b) => +(a[0] > b[0]) || +(b[0] === a[0]) - 1;
+                const sortedPairs = sortUpdates ? [...F.zip(___included, newValues)].sort(sortBy) : [...F.zip(___included, newValues)];
                 show({sortedPairs});
                 const resultFn = x => x.value;
 
