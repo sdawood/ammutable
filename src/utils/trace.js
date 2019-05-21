@@ -7,7 +7,7 @@ const aLine = (length = 5) => {
 };
 
 module.exports = {
-    show,
+    show: () => {},
     aLine
 };
 
